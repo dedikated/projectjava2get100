@@ -8,7 +8,7 @@ public class Main {
         // сумма пополнения порог, и для этих двух разных
         // сценариев рассчитываете сумму бонуса и выводите
         // на экран.
-        int balance = 200;
+        int balance = 300;
         int deposit = 900;
         int account = balance + deposit;
         int bonus = account / 100;
@@ -18,6 +18,8 @@ public class Main {
         } else {
             System.out.println("Пополните счет от 1000 рублей, чтобы получить бонус");
         }
+        int overall = account + bonus;
+        System.out.println("Итоговый счет с бонусами " + overall);
 
     }
 }
