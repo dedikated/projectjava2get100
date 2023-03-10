@@ -12,16 +12,11 @@ public class Main {
         int deposit = 900;
         int account = balance + deposit;
         int bonus = account / 100;
-        System.out.println("Итоговый счет " + account);
-        if (account > 1000) {
-            System.out.println("Бонусы " + bonus);
-        } else {
-            System.out.println("Пополните счет от 1000 рублей, чтобы получить бонус");
-        }
         int overall = account + bonus;
-        if (overall > 1000) {
-            System.out.println("Итоговый счет с бонусами " + overall);
+        if (account > 1000) {
+            System.out.println("Итоговый счет с бонусами: " + overall);
         } else {
+            System.out.println("Баланс " + account + ". Пополните баланс от 1000 рублей, чтобы получить бонус");
         }
         ;
 
