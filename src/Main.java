@@ -19,7 +19,11 @@ public class Main {
             System.out.println("Пополните счет от 1000 рублей, чтобы получить бонус");
         }
         int overall = account + bonus;
-        System.out.println("Итоговый счет с бонусами " + overall);
+        if (overall > 1000) {
+            System.out.println("Итоговый счет с бонусами " + overall);
+        } else {
+        }
+        ;
 
     }
 }
